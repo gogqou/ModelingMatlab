@@ -1,0 +1,10 @@
+for i=1:50
+    xnew=r*x*(1-x)
+    x=xnew
+    plot (i,x)
+    hold on
+    xnew=r1*x*(1-x)
+    x=xnew
+    plot (i,x)
+    hold on
+end

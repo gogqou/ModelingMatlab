@@ -1,0 +1,13 @@
+function res=fib_triple(n)
+a=0
+F=fibonacci_seq(n+3);
+for i=1:n
+    if Istriple(F(i)*F(i+3),2*F(i+1)*F(i+2),(F(i+1))^2+(F(i+2))^2);
+        a=1;
+    else a=0;
+    end
+    
+end
+
+end
+

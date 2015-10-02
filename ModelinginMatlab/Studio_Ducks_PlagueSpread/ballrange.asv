@@ -1,0 +1,15 @@
+function res=ballrange(v, theta)
+vy=v*sin(theta)
+vx=v*cos(theta)
+rho=1.3 %density of air, kg/m cubed
+A=.0042 %cross sectional area of baseball, m squared
+C=.3 %drag coefficient
+m=.145 %mass in kg
+g=9.8
+Fy_up=-1/2*rho*A*C*(vy)^2-m*g
+Fx=-1/2*rho*A*C*(vx)^2
+Fy_down=-1
+ay_up=Fy_up/m
+ax=Fx/m
+t_up=vy/ay %calculates time up
+h_up=vy*t_up+1/2ay*t^2 %calculates maximum height

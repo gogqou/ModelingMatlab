@@ -1,0 +1,26 @@
+function res=duck(v,dt)
+[T,V,H]=euler(v,dt);
+h=max(H)
+v=max(V)
+function [T,V,H]=euler(v,dt)
+V(1)=v;
+H(1)=0;
+T(1)=0;
+time_duck_lands=round(v/4.9/dt);
+    for i=2:time_duck_lands;
+       
+        T(i)=T(i-1)+dt;
+        V(i)=V(i-1)+acceleration*dt;
+        H(i)=H(i-1)+V(i-1)*dt; 
+plot(T,V);
+hold on
+plot (T,H);
+    end
+
+end
+end
+function res=acceleration
+a=-9.8;
+res=a;
+end
+

@@ -1,0 +1,4 @@
+function res=fib_triple(n)
+fibonacci_seq(n)
+
+

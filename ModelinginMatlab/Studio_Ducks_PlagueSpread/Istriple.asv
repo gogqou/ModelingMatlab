@@ -1,0 +1,2 @@
+function res=istriple(a,b,c)
+if c==a^2+b

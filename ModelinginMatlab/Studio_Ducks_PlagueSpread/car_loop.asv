@@ -1,0 +1,7 @@
+i=1 %week number
+a(i)=150
+b(i)=150
+a(i+1)= a-.05*a+.03*b
+b(i= b+.05*a-.03*b
+a=anew
+b=bnew

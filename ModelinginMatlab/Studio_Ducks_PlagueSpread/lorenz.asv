@@ -1,0 +1,12 @@
+F(1)=1
+F(2)=1
+for i=3:100
+    F(i)=F(i-1) + F(i-2)
+end
+plot (F)
+
+x(i+1) = x(i) + sigma*(y(i)-x(i))*dt
+y(i+1) = y(i) + [x(i) *(r-z(i)) - y(i)]*dt
+z(i+1) = z(i) + x(i)*y(i)-b*z(i))*dt
+x(i)=x(i+1)
+y(i)=y(x+1)

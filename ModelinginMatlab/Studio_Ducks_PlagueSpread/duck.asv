@@ -1,0 +1,7 @@
+function res = duck(d) %finds depth at which duck will float in cm
+r=10; %radius of duck in cm
+p(1)=.3; %density of duck in g/cm^3
+for i=
+f=4*(r^3)*p - 3*r*d^2+d^3;
+res = f;
+end

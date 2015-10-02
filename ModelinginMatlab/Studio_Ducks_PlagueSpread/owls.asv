@@ -1,0 +1,16 @@
+P(1)=300
+J(1)=1
+S(1)=20
+A(1)=80
+for n=2:100
+J(n)=round(.33*A(n-1));
+S(n)=round(.18*J(n-1));
+A(n)=(round(.71*S(n-1))+round(A(n-1)*.94));
+P(n)=A(n)+S(n)+J(n);
+plot (n,P(n), 'g-');
+hold on
+plot (n,A(n), 'r-');
+plot (n,S(n),'k-');
+plot (n,J(n),'b-');
+end
+P(n), A(n), S(n), J(n)
